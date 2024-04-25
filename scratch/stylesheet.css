@@ -1,0 +1,105 @@
+/* stylesheet.css */
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Set a background color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6b849f;
+    margin: 0; /* Remove default body margin */
+}
+
+.resume-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 horizontal tiles */
+    grid-gap: 10px; /* Add spacing between tiles */
+    margin-top: 1%;
+}
+
+/* Style headings */
+h2 {
+    color: #333;
+    
+}
+
+h3 {
+    color: #666;
+    margin-top: 1rem;
+}
+
+h1 {
+    padding-bottom: 1%;
+}
+
+/* Style lists */
+ul {
+    list-style-type:lower-greek;
+    margin-left: 1rem;
+    text-align: left;
+    padding: top 10px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+#indent {
+    padding-left: 17px;
+}
+
+
+#bottom.child  {
+    margin-top: 20px;
+    height: 700px;
+}
+
+
+.child {
+    position: relative;
+    width: 100%; 
+    margin: 0 auto; 
+    scroll-snap-align: start; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Enable scrolling when content overflows */
+    height: 300px;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    overflow-y: auto; /* Enable vertical scrolling */
+    
+
+}
+
+.back {
+    display: none; /* Initially hide the back content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Set a background color for the back content */
+    transition: opacity 0.5s ease; /* Add a smooth opacity transition */
+    padding: 37px;
+}
+.child:hover .back {
+    display: block; /* Show the back content on hover */
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    
+}
